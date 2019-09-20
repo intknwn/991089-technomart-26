@@ -1,0 +1,500 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-header {
+  color: #32425c;
+
+  background-color: #f4f7f9;
+}
+
+.page-header a {
+  color: #ffffff;
+}
+
+.page-header-top {
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.logo {
+  background-color: #ee3643;
+}
+
+.logo:hover,
+.logo:focus {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background: #ba2732;
+}
+
+.search-field {
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.search-field::placeholder {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.search-field:hover {
+  background-color: #212a3a;
+}
+
+.search-field:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.user-navigation a {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.user-navigation .bookmarks:hover,
+.user-navigation .bookmarks:focus,
+.user-navigation .cart:hover,
+.user-navigation .cart:focus {
+  background-color: #212a3a;
+}
+
+.user-navigation .bookmarks:active,
+.user-navigation .cart:active {
+  background-color:#161d29;
+}
+
+.user-navigation .filled-cart {
+  background-color: #ee3643;
+}
+
+.user-navigation .filled-cart:hover,
+.user-navigation .filled-cart:focus {
+  background-color: #ca2c37;
+}
+
+.user-navigation .filled-cart:active {
+  background: #ba2732;
+}
+
+.user-navigation .order {
+  background-color: #63a63e;
+}
+
+.user-navigation .order:hover,
+.user-navigation .order:focus {
+  background-color: #5fbb2d;
+}
+
+.user-navigation .order:active {
+  background-color: #518534;
+}
+
+.page-heading {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  font-weight: normal;
+  color: #ee3643;
+}
+
+.page-header-contacts .phone {
+    font-size: 21px;
+    line-height: 21px;
+    color: #e9292a;
+}
+
+.page-header-contacts .address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.auth-section a {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+
+  background-color: #ffffff;
+}
+
+.auth-section a:hover,
+.auth-section a:focus {
+  color: #ee3643;
+}
+
+.auth-section a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-details {
+  background-color: #f1f5f7;
+}
+
+.user-details a {
+  color: #000000;
+}
+
+.user-details a:hover,
+.user-details a:focus {
+  color: #000000;
+}
+
+.user-details a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-links a {
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user-links a:hover,
+.user-links a:focus {
+  color: #ee3643;
+}
+
+.user-links a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.site-navigation {
+  list-style: none;
+
+  background-color: #293449;
+}
+
+.site-navigation a {
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #32425c;
+}
+
+.site-navigation a:active {
+  background-color: #1d2739;
+}
+
+.about-company {
+  color: #000000;
+}
+
+.about-company p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.about-company h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.about-company .delivery-companies-list {
+  font-size: 18px;
+  line-height: 20px;
+
+  list-style: none;
+}
+
+.button {
+  color: #ffffff;
+  size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.page-footer {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+  background-color: #32425c;
+}
+
+.page-footer ul {
+  list-style: none;
+}
+
+.footer-navigation-top a {
+  color: #f1f5f7;
+}
+
+.footer-navigation-top a:hover,
+.footer-navigation-top a:focus {
+  text-decoration: underline;
+}
+
+.footer-navigation-top a:active {
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.footer-navigation-bottom a {
+  color: #ffd180;
+}
+
+.footer-navigation-bottom a:hover,
+.footer-navigation-bottom a:focus {
+  text-decoration: underline;
+}
+
+.footer-navigation-bottom a:active {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
+.page-footer-bottom {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #293449;
+}
+
+.social a {
+  color: #ffffff;
+  background-color: #212a3a;
+}
+
+.social a:hover,
+.social a:focus {
+  background-color: #ee3643;
+}
+
+.social a:active {
+  text-decoration: none;
+}
+
+.feedback a,
+.developer a {
+  color: #ffd180;
+}
+
+.feedback a:hover,
+.feedback a:focus,
+.developer a:hover,
+.developer a:focus {
+  color: #ffd180;
+  text-decoration: underline;
+}
+
+.feedback a:active,
+.developer a:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.map-popup,
+.contact-us-popup,
+.add-to-cart-popup {
+  display: none;
+}
+
+.perforators-range {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.breadcrumbs {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #ee3643;
+}
+
+.breadcrumbs a:active {
+  color: #000000;
+}
+
+.inner-page-heading {
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: #f2f6f8;
+  color: #32425c;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+
+}
+
+.filter-controls h2 {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+
+}
+
+.filter-form legend {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.filter-form label {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.button-light {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+.items-list {
+  list-style: none;
+}
+
+.item h3 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.add-to-cart {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #63a63e;
+}
+
+.add-to-cart:hover,
+.add-to-cart:focus {
+  background-color: #5fbb2d;
+}
+
+.add-to-cart:active {
+  background-color:#518534;
+}
+
+.add-to-bookmarks {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ffffff;
+}
+
+.add-to-bookmarks:hover,
+.add-to-bookmarks:focus {
+  background-color: #ffffff;
+}
+
+.add-to-bookmarks:active {
+  color: rgba(50, 66, 92, 0.3);
+  background-color:#ffffff;
+}
+
+.old-price,
+.new-price {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.old-price {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.new-price {
+  color: #ffffff;
+  background: url("../img/item-button.svg") no-repeat;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.current-page {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.pagination a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+  color: #000000;
+}
+
+.pagination a:active {
+  color: #000000;
+}
+
+.additional-info {
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  font-size: 13px;
+  line-height: 24px;
+  background-color: #f4f7f9;
+}
+
+.additional-info h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #000000;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+}
