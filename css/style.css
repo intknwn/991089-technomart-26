@@ -49,14 +49,21 @@ a {
   background-color: #293449;
 }
 
+.container {
+  width: 940px;
+
+  margin: 0 auto;
+}
+
 .page-header-top .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
 
-  width: 940px;
-
-  margin: 0 auto;
+.page-header-logo {
+  display: flex;
+  flex-direction: row;
 }
 
 .logo {
@@ -249,12 +256,6 @@ a {
   background-color: #1d2739;
 }
 
-.main-content .container {
-  width: 940px;
-
-  margin: 0 auto;
-}
-
 .about-company {
   display: flex;
   flex-direction: row;
@@ -284,6 +285,8 @@ a {
 }
 
 .about-company .delivery-companies-list {
+  padding: 0 0;
+
   font-size: 18px;
   line-height: 20px;
 
@@ -325,22 +328,15 @@ a {
 .page-footer .container {
   display: flex;
   flex-direction: row;
-
-  width: 940px;
-
-  margin: 0 auto;
 }
 
 .page-footer ul {
   list-style: none;
 }
 
-.footer-navigation-top {
-  display: flex;
-  flex-direction: row;
-}
-
+.footer-navigation-top,
 .footer-navigation-bottom {
+  padding: 0 0;
   display: flex;
   flex-direction: row;
 }
@@ -384,6 +380,7 @@ a {
   flex-direction: row;
   align-items: center;
 
+  padding: 0 0;
   margin: 0 auto;
 }
 
@@ -399,6 +396,11 @@ a {
 
 .social a:active {
   text-decoration: none;
+}
+
+.page-footer-contacts {
+  display: flex;
+  flex-direction: row;
 }
 
 .feedback a,
@@ -433,6 +435,11 @@ a {
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0 0;
+
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -581,6 +588,11 @@ a {
 }
 
 .pagination {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0 0;
+
   list-style: none;
 }
 
@@ -622,9 +634,4 @@ a {
   font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
-}
-
-.additional-info .container {
-  width: 940px;
-  margin: 0 auto;
 }
