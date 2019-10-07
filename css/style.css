@@ -40,10 +40,6 @@ a {
   background-color: #f4f7f9;
 }
 
-/* .page-header.inner-page {
-  margin-bottom: 22px;
-} */
-
 .page-header a {
   color: #ffffff;
 }
@@ -120,10 +116,6 @@ a {
   height: 17px;
 
   font-size: 0;
-
-/*   background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: center center; */
 }
 
 .search-field {
@@ -836,12 +828,6 @@ a {
   text-decoration: none;
 }
 
-.map-popup,
-.contact-us-popup,
-.add-to-cart-popup {
-  display: none;
-}
-
 .catalog {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
@@ -1264,9 +1250,6 @@ a {
   color: #ffffff;
   background: #ee3643;
   border-radius: 3px;
-
-/*   color: #ffffff;
-  background: url("../img/item-button.svg") no-repeat; */
 }
 
 .new-price-only {
@@ -1361,4 +1344,212 @@ a {
   font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.map-popup,
+.contact-us-popup,
+.add-to-cart-popup {
+  display: none;
+}
+
+.map-popup,
+.contact-us-popup,
+.add-to-cart-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.map-popup {
+  width: 940px;
+  height: 446px;
+
+  margin-top: -223px;
+  margin-left: -446px;
+
+  border: 0;
+}
+
+.contact-us-popup {
+  width: 620px;
+  height: 430px;
+
+  margin-top: -215px;
+  margin-left: -310px;
+}
+
+.add-to-cart-popup {
+  width: 620px;
+  height: 282px;
+
+  margin-top: -141px;
+  margin-left: -310px;
+
+  background-color: #ffffff;
+  background-image: url("../img/modal-check.svg");
+  background-repeat: no-repeat;
+  background-position: 81px 48px;
+
+  color: #000000;
+}
+
+.map-popup-content,
+.contact-us-popup-content {
+  position: relative;
+}
+
+.close-button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.map-popup-content .close-button {
+  position: absolute;
+
+  width: 21px;
+  height: 21px;
+
+  top: 9px;
+  right: 15px;
+}
+
+.contact-us-popup .close-button,
+.add-to-cart-popup .close-button {
+  position: absolute;
+
+  width: 21px;
+  height: 21px;
+
+  top: 9px;
+  right: 15px;
+}
+
+.contact-form .container {
+  width: 460px;
+
+  margin: 0 auto;
+  padding-top: 46px;
+}
+
+.contact-form label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.contact-form .first-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.contact-form .field {
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.contact-form .field::placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.contact-form .field:hover {
+  border-color: #b5b5b5;
+}
+
+.contact-form .field:focus {
+  border-color: #ee3643;
+
+  outline: none;
+}
+
+.contact-form .name-field,
+.contact-form .email-field {
+  width: 220px;
+  min-height: 38px;
+
+  padding-left: 13px;
+}
+
+.contact-form .text-field {
+  width: 460px;
+  height: 114px;
+
+  margin-bottom: 28px;
+
+  padding-left: 13px;
+  padding-top: 5px;
+
+  resize: none;
+}
+
+.contact-form .text-field::placeholder {
+  padding: 0;
+}
+
+.button-container {
+  padding-top: 37px;
+  padding-bottom: 37px;
+  background-color: #f4f4f4;
+}
+
+.contact-form .submit-button {
+  display: block;
+  width: 460px;
+
+  margin: 0 auto;
+
+  cursor: pointer;
+}
+
+.add-to-cart-popup h2 {
+  margin-bottom: 68px;
+
+  padding-top: 40px;
+  padding-left: 179px;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.add-to-cart-popup .button-container {
+  text-align: center;
+}
+
+.add-to-cart-popup .submit-button,
+.add-to-cart-popup .continue-button {
+  width: 220px;
+}
+
+.add-to-cart-popup .submit-button {
+  margin-right: 15px;
+}
+
+.add-to-cart-popup .continue-button {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.add-to-cart-popup .continue-button:hover,
+.add-to-cart-popup .continue-button:focus {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.add-to-cart-popup .continue-button:active {
+  background-color: #ba2732;
 }
