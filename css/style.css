@@ -363,6 +363,7 @@ a {
 .auth-section a {
   position: relative;
 
+  height: 45px;
   min-height: 45px;
 
   color: #000000;
