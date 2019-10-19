@@ -100,12 +100,12 @@ a {
   box-shadow: 0px 5px 0 0 #852723;
 }
 
-.logo:hover,
-.logo:focus {
+.logo-hover:hover,
+.logo-hover:focus {
   background-color: #ca2c37;
 }
 
-.logo:active {
+.logo-hover:active {
   background: #ba2732;
 }
 
@@ -300,9 +300,10 @@ a {
 }
 
 .page-heading {
-  width: 320px;
+  width: 260px;
 
   margin: 0 0;
+  margin-right: 60px;
   padding: 0 0;
   padding-top: 3px;
   padding-left: 53px;
@@ -1089,6 +1090,7 @@ a {
 }
 
 .about-company .subheader {
+  width: 520px;
   padding: 0 0;
   margin: 0 0;
   margin-bottom: 32px;
@@ -1102,6 +1104,10 @@ a {
   width: 300px;
 }
 
+.about-company-contacts .subheader {
+  width: 190px;
+}
+
 .services p,
 .about-company p {
   padding: 0 0;
@@ -1112,7 +1118,21 @@ a {
   line-height: 24px;
 }
 
+.loan-slide p {
+  margin-bottom: 28px;
+}
+
+.warranty-slide p {
+  width: 375px;
+}
+
+.loan-slide a {
+  width: 195px;
+}
+
+
 .services .subheader {
+  width: 400px;
   margin-bottom: 65px;
 }
 
@@ -1147,6 +1167,7 @@ a {
 }
 
 .about-company .delivery-companies-text {
+  width: 390px;
   padding: 0 0;
   margin: 0 0;
   margin-top: -7px;
@@ -1325,6 +1346,11 @@ a {
   height: 107px;
   min-height: 107px;
   align-items: center;
+}
+
+.page-footer-bottom p {
+  margin: 0;
+  padding: 0;
 }
 
 .copyright {
@@ -1896,8 +1922,8 @@ a {
   margin: 0;
   margin-bottom: 12px;
 
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
 
 
   font-size: 18px;
