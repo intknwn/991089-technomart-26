@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic"
+  <link
+    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
@@ -14,11 +15,11 @@
   <header class="page-header">
     <div class="page-header-top">
       <div class="container">
-        <a class="logo"><img src="img/logo-technomart.svg" width="109" height="19"
-            alt="Техномарт"></a>
+        <a class="logo"><img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт"></a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <input class="search-field" type="search" name="search" id="search-field" placeholder="Поиск:">
           <label class="search-field-label" for="search-field">
+            <span class="visually-hidden">Поиск по сайту</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
               <path fill="#ffffff"
                 d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
@@ -35,7 +36,10 @@
     <div class="page-header-middle">
       <h1 class="page-heading">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
       <div class="page-header-contacts">
-        <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a class="phone" href="tel:+78125550555">
+          <span class="visually-hidden">Позвонить в интернет-магазин «Техномарт»</span>
+          +7 (812) 555-05-55
+        </a>
         <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </div>
       <div class="auth-section">
@@ -61,8 +65,7 @@
       <section class="promo">
         <h2 class="visually-hidden">Промо-блок</h2>
         <ul class="promo-list-1">
-          <li class="promo-block materials">
-            <div class="new-tag"></div>
+          <li class="promo-block materials new-tag">
             <h3>Материалы</h3>
             <a class="button" href="">На любой вкус</a>
           </li>
@@ -76,29 +79,29 @@
           </li>
         </ul>
         <div class="promo-row-2">
-          <section class="slider">
-            <div class="slider-container">
+          <section class="promo-slider">
+            <div class="promo-slider-container">
               <h2 class="visually-hidden">Промо-слайды</h2>
-              <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-              <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-              <div class="slider-controls-arrow">
-                <button class="prev">Предыдущий</button>
+              <input class="visually-hidden product-1-input" type="radio" id="product-1" name="toggle" checked>
+              <input class="visually-hidden product-2-input" type="radio" id="product-2" name="toggle">
+              <div class="promo-slider-arrows">
+                <button class="previous">Предыдущий</button>
                 <button class="next">Следующий</button>
               </div>
-              <div class="slider-controls">
+              <div class="promo-slider-controls">
                 <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
                 <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
               </div>
-              <ul class="slider-list">
-                <li class="slider-item">
+              <ul class="promo-slider-list">
+                <li class="promo-slider-item">
                   <h3>Дрели</h3>
                   <p>Соседям на радость!</p>
-                  <a class="slider-item-button button" href="catalog.html">Открыть каталог</a>
+                  <a class="promo-slider-item-button button" href="catalog.html">Открыть каталог</a>
                 </li>
-                <li class="slider-item">
+                <li class="promo-slider-item">
                   <h3>Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
-                  <a class="slider-item-button button" href="catalog.html">Открыть каталог</a>
+                  <a class="promo-slider-item-button button" href="catalog.html">Открыть каталог</a>
                 </li>
               </ul>
             </div>
@@ -123,62 +126,65 @@
         </div>
         <ul class="items-list">
           <li class="item">
+            <img class="item-img" src="img/bosch-bfg-9000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             <div class="actions">
               <a class="add-to-cart" href="">Купить</a>
               <a class="add-to-bookmarks" href="">В закладки</a>
-              <img class="item-img" src="img/bosch-bfg-9000.png" width="218" height="170"
-                alt="Перфоратор BOSCH BFG 9000">
             </div>
             <h3>Перфоратор BOSCH BFG 9000</h3>
-            <p class="old-price">
-              32500 Р.
-            </p>
-            <p class="new-price">
-              25500 Р.
-            </p>
+            <div class="price">
+              <p class="old-price">
+                32500 Р.
+              </p>
+              <p class="new-price">
+                25500 Р.
+              </p>
+            </div>
           </li>
           <li class="item">
+            <img class="item-img" src="img/bosch-bfg-3000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             <div class="actions">
               <a class="add-to-cart" href="">Купить</a>
               <a class="add-to-bookmarks" href="">В закладки</a>
-              <img class="item-img" src="img/bosch-bfg-3000.png" width="218" height="170"
-                alt="Перфоратор BOSCH BFG 3000">
             </div>
             <h3>Перфоратор BOSCH BFG 3000</h3>
+            <div class="price">
             <p class="old-price">
               22500 Р.
             </p>
             <p class="new-price">
               15500 Р.
             </p>
+            </div>
           </li>
           <li class="item">
+            <img class="item-img" src="img/bosch-bfg-6000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             <div class="actions">
               <a class="add-to-cart" href="">Купить</a>
               <a class="add-to-bookmarks" href="">В закладки</a>
-              <img class="item-img" src="img/bosch-bfg-6000.png" width="218" height="170"
-                alt="Перфоратор BOSCH BFG 6000">
             </div>
             <h3>Перфоратор BOSCH BFG 6000</h3>
+            <div class="price">
             <p class="old-price">
               30500 Р.
             </p>
             <p class="new-price">
               25500 Р.
             </p>
+            </div>
           </li>
-          <li class="item">
-            <div class="new-tag"></div>
+          <li class="item new-tag">
+            <img class="item-img" src="img/bosch-bfg-2000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             <div class="actions">
               <a class="add-to-cart" href="">Купить</a>
               <a class="add-to-bookmarks" href="">В закладки</a>
-              <img class="item-img" src="img/bosch-bfg-2000.png" width="218" height="170"
-                alt="Перфоратор BOSCH BFG 2000">
             </div>
             <h3>Перфоратор BOSCH BFG 2000</h3>
-            <p class="new-price new-price-only">
+            <div class="price">
+            <p class="new-price">
               12500 Р.
             </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -190,28 +196,52 @@
         </div>
         <ul class="best-selling-brands-list">
           <li>
-            <a class="brand-link" href=""><img class="bosch-logo" src="img/bosch.png" width="126" height="37" alt="Bosch"></a>
+            <a class="brand-link" href="">
+              <span class="visually-hidden">Перейти на сайт производителя «Bosch»</span>
+              <img class="bosch-logo" src="img/bosch.png" width="126" height="37" alt="Bosch">
+            </a>
           </li>
           <li>
-            <a class="brand-link" href=""><img class="makita-logo" src="img/makita.png" width="123" height="40" alt="Makita"></a>
+            <a class="brand-link" href="">
+              <span class="visually-hidden">Перейти на сайт производителя «Makita»</span>
+              <img class="makita-logo" src="img/makita.png" width="123" height="40" alt="Makita">
+            </a>
           </li>
           <li>
-            <a class="brand-link" href=""><img class="dewalt-logo" src="img/de-walt.png" width="146" height="44" alt="DeWalt"></a>
+            <a class="brand-link" href="">
+              <span class="visually-hidden">Перейти на сайт производителя «DeWalt»</span>
+              <img class="dewalt-logo" src="img/de-walt.png" width="146" height="44" alt="DeWalt">
+            </a>
           </li>
           <li>
-            <a class="brand-link" href=""><img class="interskol-logo" src="img/interskol.png" width="200" height="88" alt="Интерскол"></a>
+            <a class="brand-link" href="">
+              <span class="visually-hidden">Перейти на сайт производителя «Интерскол»</span>
+              <img class="interskol-logo" src="img/interskol.png" width="200" height="88" alt="Интерскол">
+            </a>
           </li>
           <li>
-            <a class="brand-link" href=""><img class="hitachi-logo" src="img/hitachi.png" width="169" height="31" alt="Hitachi"></a>
+            <a class="brand-link" href="">
+              <span class="visually-hidden">Перейти на сайт производителя «Hitachi»</span>
+              <img class="hitachi-logo" src="img/hitachi.png" width="169" height="31" alt="Hitachi">
+            </a>
           </li>
           <li>
-            <a class="brand-link" href=""><img class="lg-logo" src="img/lg.png" width="121" height="73" alt="LG"></a>
+            <a class="brand-link" href="">
+              <span class="visually-hidden">Перейти на сайт производителя «LG»</span>
+              <img class="lg-logo" src="img/lg.png" width="121" height="73" alt="LG">
+            </a>
           </li>
           <li>
-            <a class="brand-link" href=""><img class="aeg-logo" src="img/aeg.png" width="151" height="96" alt="AEG"></a>
+            <a class="brand-link" href="">
+              <span class="visually-hidden">Перейти на сайт производителя «AEG»</span>
+              <img class="aeg-logo" src="img/aeg.png" width="151" height="96" alt="AEG">
+            </a>
           </li>
           <li>
-            <a class="brand-link" href=""><img class="metabo-logo" src="img/metabo.png" width="204" height="69" alt="Metabo"></a>
+            <a class="brand-link" href="">
+              <span class="visually-hidden">Перейти на сайт производителя «Metabo»</span>
+              <img class="metabo-logo" src="img/metabo.png" width="204" height="69" alt="Metabo">
+            </a>
           </li>
         </ul>
       </section>
@@ -222,18 +252,18 @@
         <h2>Сервисы</h2>
         <p class="subheader">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех
           сил, чтобы сделать ваши покупки приятными.</p>
-        <section class="slider">
-          <div class="slider-container">
-            <input class="visually-hidden" type="radio" id="service-1" name="toggle-2" checked>
-            <input class="visually-hidden" type="radio" id="service-2" name="toggle-2">
-            <input class="visually-hidden" type="radio" id="service-3" name="toggle-2">
-            <div class="slider-controls">
+        <section class="services-slider">
+          <div class="services-slider-container">
+            <input class="visually-hidden service-1-input" type="radio" id="service-1" name="toggle-2" checked>
+            <input class="visually-hidden service-2-input" type="radio" id="service-2" name="toggle-2">
+            <input class="visually-hidden service-3-input" type="radio" id="service-3" name="toggle-2">
+            <div class="services-slider-controls">
               <label class="slider-controls-item slider-controls-item--1" for="service-1">Доставка</label>
               <label class="slider-controls-item slider-controls-item--2" for="service-2">Гарантия</label>
               <label class="slider-controls-item slider-controls-item--3" for="service-3">Кредит</label>
             </div>
-            <ul class="slider-list">
-              <li class="slider-item delivery-slide">
+            <ul class="services-slider-list">
+              <li class="services-slider-item delivery-slide">
                 <h3>Доставка</h3>
                 <p>
                   Мы с удовольствием доставим ваш товар прямо<br>
@@ -244,7 +274,7 @@
                   поднимая его на ваш этаж!
                 </p>
               </li>
-              <li class="slider-item warranty-slide">
+              <li class="services-slider-item warranty-slide">
                 <h3>Гарантия</h3>
                 <p>
                   Если купленный у нас товар поломается или заискрит,<br>
@@ -254,7 +284,7 @@
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </li>
-              <li class="slider-item loan-slide">
+              <li class="services-slider-item loan-slide">
                 <h3>Кредит</h3>
                 <p>
                   Залезть в долговую яму стало проще!<br>
@@ -278,7 +308,8 @@
             оставит
             равнодущными любителей сэкономить на гастарбайтерах.</p>
           <div class="delivery">
-            <p class="delivery-companies-text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниям:</p>
+            <p class="delivery-companies-text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт
+              работает со многими транспортными компаниям:</p>
             <ul class="delivery-companies-list">
               <li>Деловые линии</li>
               <li>Автотрейдинг</li>
@@ -291,6 +322,7 @@
           <h3>Контакты</h3>
           <p class="subheader">Вы можете забрать товар сами, заехав в наш офис:</p>
           <a class="show-map-popup" href="map.html">
+            <span class="visually-hidden">Показать офис интернет-магазина «Техномарт» на карте</span>
             <img src="img/map.png" width="300" height="158"
               alt="Офис интернет-магазина «Техномарт» расположен по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ул. Б. Конюшенная, д. 19/8">
           </a>
@@ -302,8 +334,7 @@
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer-logo">
-        <a class="logo footer-logo"><img src="img/logo-technomart.svg" width="138" height="23"
-            alt="Техномарт"></a>
+        <a class="logo footer-logo"><img src="img/logo-technomart.svg" width="138" height="23" alt="Техномарт"></a>
         <p class="address">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55
@@ -416,13 +447,13 @@
   </section>
 
   <section class="add-to-cart-popup">
-      <button class="add-to-cart-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-      <h2>Товар добавлен в корзину!</h2>
-      <div class="button-container">
-        <a class="button submit-button" href="">Оформить заказ</a>
-        <a class="button continue-button" href="index.html">Продолжить покупки</a>
-      </div>
-    </section>
+    <button class="add-to-cart-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <h2>Товар добавлен в корзину!</h2>
+    <div class="button-container">
+      <a class="button submit-button" href="">Оформить заказ</a>
+      <a class="button continue-button" href="index.html">Продолжить покупки</a>
+    </div>
+  </section>
 
   <script src="js/main.min.js"></script>
 
